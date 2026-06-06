@@ -759,7 +759,7 @@ export default function Home() {
       </div>
 
       <footer style={{ borderTop:"1px solid #1a1a1a", marginTop:48, paddingTop:14, fontSize:"0.6rem", color:"#444", letterSpacing:"0.12em", textTransform:"uppercase", display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:8 }}>
-        <span>Color Replacer — MIT © 2025 Rivaldi Gunawan Yusuf</span>
+        <span>Color Replacer — MIT © 2026 Rivaldi Gunawan Yusuf</span>
         <span>HSV Luminance-Preserving Engine</span>
       </footer>
     </main>

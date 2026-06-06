@@ -4,7 +4,8 @@
 > Replace a specific color (e.g. green tiles) with a brand color while keeping highlights, shadows, and texture intact.
 
 **Author:** Rivaldi Gunawan Yusuf  
-**License:** MIT
+**License:** MIT  
+**GitHub:** [github.com/rivaldigunawanyusuf/color-replacer](https://github.com/rivaldigunawanyusuf/color-replacer)
 
 ---
 
@@ -155,4 +156,4 @@ Returns: `image/png`
 
 ## License
 
-MIT © 2025 Rivaldi Gunawan Yusuf
+MIT © 2026 Rivaldi Gunawan Yusuf

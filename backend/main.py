@@ -1,5 +1,5 @@
 # Color Replacer — Luminance-Preserving HSV Recolor Engine
-# Copyright (c) 2025 Rivaldi Gunawan Yusuf
+# Copyright (c) 2026 Rivaldi Gunawan Yusuf
 # SPDX-License-Identifier: MIT
 
 import io
