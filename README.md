@@ -78,12 +78,18 @@ The app will be available at **http://localhost:3000**.
 
 Alternatively, run both servers at once from the project root:
 
+**macOS / Linux:**
 ```bash
 chmod +x start.sh
 ./start.sh
 ```
 
-This script auto-creates the Python venv and installs all deps on first run.
+**Windows:**
+```bat
+start.bat
+```
+
+Both scripts auto-create the Python venv and install all deps on first run.
 
 ---
 
@@ -101,7 +107,8 @@ color-replacer/
 │   │   └── globals.css      # Brutalist design tokens
 │   ├── next.config.ts
 │   └── package.json
-├── start.sh                 # One-command launcher
+├── start.sh                 # One-command launcher (macOS / Linux)
+├── start.bat                # One-command launcher (Windows)
 ├── LICENSE
 └── README.md
 ```
