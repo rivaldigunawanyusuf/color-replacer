@@ -517,11 +517,21 @@ export default function Home() {
           <span style={{ background:"#f0f0f0", color:"#0a0a0a", fontWeight:800, fontSize:"0.6rem", letterSpacing:"0.2em", padding:"4px 10px", textTransform:"uppercase", flexShrink:0 }}>
             Tool
           </span>
-          <h1 style={{ fontSize:"clamp(1.6rem,4vw,3rem)", fontWeight:800, letterSpacing:"-0.02em", margin:0, textTransform:"uppercase", lineHeight:1 }}>
+          <h1 style={{ fontSize:"clamp(1.3rem,4vw,3rem)", fontWeight:800, letterSpacing:"-0.02em", margin:0, textTransform:"uppercase", lineHeight:1 }}>
             Color Replacer
           </h1>
+          <a href="https://github.com/rivaldigunawanyusuf/color-replacer" target="_blank" rel="noopener noreferrer"
+            className="header-github"
+            style={{ marginLeft:"auto", display:"inline-flex", alignItems:"center", gap:6, border:"1px solid #2a2a2a", padding:"6px 14px", color:"#666", textDecoration:"none", fontSize:"0.6rem", letterSpacing:"0.12em", fontWeight:800, textTransform:"uppercase", flexShrink:0, transition:"all 0.1s" }}
+            onMouseEnter={e=>(e.currentTarget.style.cssText+="border-color:#f0f0f0;color:#f0f0f0;")}
+            onMouseLeave={e=>(e.currentTarget.style.cssText+="border-color:#2a2a2a;color:#666;")}>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
         </div>
-        <p style={{ marginTop:8, color:"#666", fontSize:"0.72rem", letterSpacing:"0.08em", textTransform:"uppercase", margin:"8px 0 0" }}>
+        <p className="header-desc" style={{ color:"#666", fontSize:"0.72rem", letterSpacing:"0.08em", textTransform:"uppercase", margin:"8px 0 0" }}>
           Luminance-preserving HSV masking — draw regions to isolate exactly what gets recolored
         </p>
       </header>
@@ -758,8 +768,17 @@ export default function Home() {
         </section>
       </div>
 
-      <footer style={{ borderTop:"1px solid #1a1a1a", marginTop:48, paddingTop:14, fontSize:"0.6rem", color:"#444", letterSpacing:"0.12em", textTransform:"uppercase", display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:8 }}>
+      <footer className="footer">
         <span>Color Replacer — MIT © 2026 Rivaldi Gunawan Yusuf</span>
+        <a href="https://github.com/rivaldigunawanyusuf/color-replacer" target="_blank" rel="noopener noreferrer"
+          style={{ display:"inline-flex", alignItems:"center", gap:6, border:"1px solid #2a2a2a", padding:"6px 14px", color:"#888", textDecoration:"none", fontSize:"0.6rem", letterSpacing:"0.12em", fontWeight:800, transition:"all 0.1s" }}
+          onMouseEnter={e=>(e.currentTarget.style.cssText+="border-color:#f0f0f0;color:#f0f0f0;")}
+          onMouseLeave={e=>(e.currentTarget.style.cssText+="border-color:#2a2a2a;color:#888;")}>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
         <span>HSV Luminance-Preserving Engine</span>
       </footer>
     </main>
