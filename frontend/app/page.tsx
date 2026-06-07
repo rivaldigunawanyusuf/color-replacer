@@ -482,7 +482,7 @@ export default function Home() {
   const [invertMode,   setInvertMode]   = useState(false);
 
   const handleFile=useCallback((f:File)=>{
-    setFile(f); setResultUrl(null); setError(null); setRegions([]); setShowResult(false);
+    setFile(f); setResultUrl(null); setError(null); setShowResult(false);
     setOriginalUrl(URL.createObjectURL(f));
   },[]);
 
@@ -619,9 +619,17 @@ export default function Home() {
 
             {/* 06 Regions */}
             <div>
-              <p className="section-label">06 — Regions
-                {regions.length>0 && <span style={{ fontWeight:400,color:"#555",marginLeft:8 }}>({regions.length})</span>}
-              </p>
+              <div style={{ display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:10,paddingBottom:6,borderBottom:"1px solid #2a2a2a" }}>
+                <p className="section-label" style={{ margin:0,paddingBottom:0,borderBottom:"none" }}>
+                  06 — Regions{regions.length>0 && <span style={{ fontWeight:400,color:"#555",marginLeft:8 }}>({regions.length})</span>}
+                </p>
+                {regions.length>0 && (
+                  <button onClick={()=>setRegions([])}
+                    style={{ fontFamily:"inherit",fontWeight:800,fontSize:"0.58rem",letterSpacing:"0.1em",textTransform:"uppercase",background:"transparent",color:"#ff4444",border:"1px solid #ff4444",padding:"3px 8px",cursor:"pointer",flexShrink:0 }}>
+                    ✕ Reset
+                  </button>
+                )}
+              </div>
               {regions.length===0 ? (
                 <p className="hint-text">No regions marked — full image will be processed</p>
               ) : (
@@ -637,11 +645,6 @@ export default function Home() {
                       <button className="region-del-btn" onClick={()=>setRegions(regions.filter((_,j)=>j!==i))}>×</button>
                     </div>
                   ))}
-                  <button
-                    onClick={()=>setRegions([])}
-                    style={{ fontFamily:"inherit",fontWeight:700,letterSpacing:"0.1em",textTransform:"uppercase",background:"transparent",color:"#ff4444",border:"1px solid #ff4444",padding:"6px 10px",fontSize:"0.62rem",cursor:"pointer",marginTop:4 }}>
-                    ✕ Clear All
-                  </button>
                 </div>
               )}
             </div>
