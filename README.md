@@ -1,7 +1,7 @@
 # Color Replacer
 
-> Luminance-preserving HSV color replacement for patterned dome images.  
-> Replace a specific color (e.g. green tiles) with a brand color while keeping highlights, shadows, and texture intact.
+> Luminance-preserving HSV color replacement for any image with patterned colors.  
+> Replace any color while keeping highlights, shadows, and texture intact — works on domes, fabrics, products, illustrations, and more.
 
 **Author:** Rivaldi Gunawan Yusuf  
 **License:** MIT  
@@ -118,9 +118,9 @@ color-replacer/
 
 ## How it works
 
-1. Upload an image of a dome (or any image with patterned colors).
+1. Upload any image.
 2. Pick the **Source Color** — the color on the image you want to replace.
-3. Pick the **Target Color** — your brand color.
+3. Pick the **Target Color** — the color you want to replace it with.
 4. Adjust **Tolerance** — higher = looser matching (captures more shade variation of the source).
 5. Click **EXECUTE RECOLOR** and drag the before/after slider to compare.
 6. Download the result.

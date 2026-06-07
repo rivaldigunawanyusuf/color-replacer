@@ -532,7 +532,7 @@ export default function Home() {
           </a>
         </div>
         <p className="header-desc" style={{ color:"#666", fontSize:"0.72rem", letterSpacing:"0.08em", textTransform:"uppercase", margin:"8px 0 0" }}>
-          Luminance-preserving HSV masking — draw regions to isolate exactly what gets recolored
+          Replace patterned colors in any image — preserves texture, shadows, and highlights
         </p>
       </header>
 
@@ -552,14 +552,14 @@ export default function Home() {
             {/* 02 Source */}
             <div>
               <p className="section-label">02 — Source Color</p>
-              <p className="hint-text" style={{ marginBottom:8,marginTop:0 }}>Color on the image to replace</p>
+              <p className="hint-text" style={{ marginBottom:8,marginTop:0 }}>Pick any color from the image you want to change</p>
               <ColorSwatch label="Color to replace" value={sourceHex} onChange={setSourceHex} />
             </div>
 
             {/* 03 Target */}
             <div>
               <p className="section-label">03 — Target Color</p>
-              <p className="hint-text" style={{ marginBottom:8,marginTop:0 }}>New brand color to apply</p>
+              <p className="hint-text" style={{ marginBottom:8,marginTop:0 }}>The color you want to replace it with</p>
               <ColorSwatch label="New color" value={targetHex} onChange={setTargetHex} />
             </div>
 
@@ -782,7 +782,7 @@ export default function Home() {
           </svg>
           GitHub
         </a>
-        <span>HSV Luminance-Preserving Engine</span>
+        <span>Luminance-Preserving HSV Engine</span>
       </footer>
     </main>
   );
