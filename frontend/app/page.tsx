@@ -300,6 +300,14 @@ function RegionCanvas({
         onRegionsChange(next); regionsRef.current=next;
         selectedRef.current=next.length-1;
         redraw();
+      } else if (e.key==="Delete"||e.key==="Backspace") {
+        const idx=selectedRef.current;
+        if (idx>=0&&idx<regionsRef.current.length) {
+          e.preventDefault();
+          const next=regionsRef.current.filter((_,i)=>i!==idx);
+          onRegionsChange(next); regionsRef.current=next;
+          selectedRef.current=-1; redraw();
+        }
       } else if (e.key==="Escape") {
         selectedRef.current=-1; redraw();
       }
