@@ -1,7 +1,7 @@
 # Color Replacer
 
-> Luminance-preserving HSV color replacement for any image with patterned colors.  
-> Replace any color while keeping highlights, shadows, and texture intact — works on domes, fabrics, products, illustrations, and more.
+> Luminance-preserving HSV color replacement for any image with patterned colors. 
+> Replace any color while keeping highlights, shadows, and texture intact. Works on buildings, fabrics, products, illustrations, and more.
 
 **Author:** Rivaldi Gunawan Yusuf  
 **License:** MIT  
